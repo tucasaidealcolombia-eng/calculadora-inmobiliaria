@@ -834,7 +834,7 @@
           <div class="rates-grid">
             <div class="rate-field">
               <label for="rateNotariales">Derechos notariales</label>
-              <div class="rate-input"><input type="number" id="rateNotariales" value="0.3" step="0.01" min="0"><span class="unit">%</span></div>
+              <div class="rate-input"><input type="number" id="rateNotariales" value="0.57" step="0.01" min="0"><span class="unit">%</span></div>
             </div>
             <div class="rate-field">
               <label for="rateIva">IVA sobre derechos notariales</label>
@@ -842,11 +842,11 @@
             </div>
             <div class="rate-field">
               <label for="rateRegistro">Impuesto de registro y beneficencia</label>
-              <div class="rate-input"><input type="number" id="rateRegistro" value="1" step="0.05" min="0"><span class="unit">%</span></div>
+              <div class="rate-input"><input type="number" id="rateRegistro" value="1.1" step="0.05" min="0"><span class="unit">%</span></div>
             </div>
             <div class="rate-field">
               <label for="rateOrip">Derechos de registro (ORIP)</label>
-              <div class="rate-input"><input type="number" id="rateOrip" value="0.5" step="0.05" min="0"><span class="unit">%</span></div>
+              <div class="rate-input"><input type="number" id="rateOrip" value="1" step="0.05" min="0"><span class="unit">%</span></div>
             </div>
             <div class="rate-field">
               <label for="rateRetencion">Retención en la fuente (venta)</label>
@@ -1191,10 +1191,10 @@
         return isNaN(v) ? fallback : v;
       };
       return {
-        notariales: num('rateNotariales', 0.3),
+        notariales: num('rateNotariales', 0.57),
         iva: num('rateIva', 19),
-        registro: num('rateRegistro', 1),
-        orip: num('rateOrip', 0.5),
+        registro: num('rateRegistro', 1.1),
+        orip: num('rateOrip', 1),
         retencion: num('rateRetencion', 1),
       };
     }
